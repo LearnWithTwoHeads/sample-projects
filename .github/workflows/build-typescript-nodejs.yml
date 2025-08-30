@@ -50,4 +50,4 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.WORKFLOW_ACTIONS_TOKEN }}
         run: |
-          gh workflow run modify-image.yaml --repo LearnWithTwoHeads/argocd-kustomize-infra --field project=typescript-nodejs-server --field version=${{ github.sha }} --field environment=dev
+          gh workflow run modify-image.yaml --repo LearnWithTwoHeads/argocd-kustomize-infra --field project=typescript-nodejs-server --field version=sha-${GITHUB_SHA::7} --field environment=dev
