@@ -46,8 +46,8 @@ jobs:
           labels: ${{ steps.meta.outputs.labels }}
           platforms: linux/amd64,linux/arm64
 
-      - name: Trigger workflow to replace image
-        env:
-          GH_TOKEN: ${{ secrets.WORKFLOW_ACTIONS_TOKEN }}
-        run: |
-          gh workflow run modify-image.yaml --repo LearnWithTwoHeads/argocd-kustomize-infra --field project=typescript-app --field version=sha-${GITHUB_SHA::7} --field environment=dev
+      # - name: Trigger workflow to replace image
+      #   env:
+      #     GH_TOKEN: ${{ secrets.WORKFLOW_ACTIONS_TOKEN }}
+      #   run: |
+      #     gh workflow run modify-image.yaml --repo LearnWithTwoHeads/argocd-kustomize-infra --field project=typescript-app --field version=sha-${GITHUB_SHA::7} --field environment=dev
