@@ -7,6 +7,10 @@ app.get("/", (req, res) => {
   res.send("Hello, World! This is Yoofi, May God help me!");
 });
 
+app.get("/health", (req, res) => {
+  res.send("OK");
+});
+
 app.listen(port, "0.0.0.0", () => {
   console.log(`Server running at http://0.0.0.0:${port}`);
 });
