@@ -11,6 +11,7 @@ jobs:
   build-and-push:
     runs-on: depot-ubuntu-24.04-4
     permissions:
+      id-token: write
       contents: read
       packages: write
 
