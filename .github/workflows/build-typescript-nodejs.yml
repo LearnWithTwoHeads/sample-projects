@@ -44,6 +44,7 @@ jobs:
         uses: depot/build-push-action@v1
         with:
           project: 9rvjk64s1l
+          token: ${{ secrets.DEPO_PROJECT_TOKEN }}
           context: ./typescript-nodejs
           push: true
           tags: ${{ steps.meta.outputs.tags }}
