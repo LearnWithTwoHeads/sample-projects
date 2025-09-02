@@ -16,7 +16,7 @@ app.get("/ping", (req, res) => {
 });
 
 app.get("/hello", (req, res) => {
-  res.send("Hello, World! How are you?");
+  res.send("Hello, World! How are you? I am Yoofi Quansah.");
 });
 
 app.listen(port, "0.0.0.0", () => {
