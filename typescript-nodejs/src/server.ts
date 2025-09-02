@@ -15,6 +15,10 @@ app.get("/ping", (req, res) => {
   res.send("Ping Pong!");
 });
 
+app.get("/hello", (req, res) => {
+  res.send("Hello, World! How are you?");
+});
+
 app.listen(port, "0.0.0.0", () => {
   console.log(`Server running at http://0.0.0.0:${port}`);
 });
