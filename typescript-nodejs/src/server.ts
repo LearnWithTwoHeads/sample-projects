@@ -1,12 +1,12 @@
-import express from 'express';
+import express from "express";
 
 const app = express();
 const port = 3000;
 
-app.get('/', (req, res) => {
-  res.send('Hello, World! This is Yoofi, God help me!');
+app.get("/", (req, res) => {
+  res.send("Hello, World! This is Yoofi, May God help me!");
 });
 
-app.listen(port, '0.0.0.0', () => {
+app.listen(port, "0.0.0.0", () => {
   console.log(`Server running at http://0.0.0.0:${port}`);
 });
