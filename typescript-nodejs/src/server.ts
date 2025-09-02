@@ -11,6 +11,10 @@ app.get("/health", (req, res) => {
   res.send("OK");
 });
 
+app.get("/ping", (req, res) => {
+  res.send("Pong");
+});
+
 app.listen(port, "0.0.0.0", () => {
   console.log(`Server running at http://0.0.0.0:${port}`);
 });
