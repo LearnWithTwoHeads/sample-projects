@@ -12,7 +12,7 @@ app.get("/health", (req, res) => {
 });
 
 app.get("/ping", (req, res) => {
-  res.send("Pong");
+  res.send("Ping Pong!");
 });
 
 app.listen(port, "0.0.0.0", () => {
